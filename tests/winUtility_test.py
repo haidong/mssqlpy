@@ -7,6 +7,6 @@ class winUtilityTest(unittest.TestCase):
 		self.assertEqual(stdErr, '')
 	def test_runCmd_dir_stdOut(self):
 		returnCode, stdOut, stdErr = winUtility.runCmd("dir")
-		self.assertIn("winUtility.py", stdOut)
+		self.assertIn("winUtility_test.py", stdOut)
 	def test_getServiceStartupAccount_dhcp(self):
 		self.assertEqual(winUtility.getServiceStartupAccount('Dhcp', 'LocalHost'), 'NT Authority\\LocalService')
