@@ -24,7 +24,7 @@ def cursorResultsPrettyPrint(cursor, data=None, check_row_lengths=True):
 		field_length = max(field_length, len(field_name))
 		if check_row_lengths:
 			# double-check field length, if it's unreliable
-			data_length = max([ len(str(row[col])) for row in data ])
+			data_length = max([ len(str(`row[col]`)) for row in data ])
 			field_length = max(field_length, data_length)
 		lengths.append(field_length)
 		rules.append('-' * field_length)
