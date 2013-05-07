@@ -1,5 +1,6 @@
 import pyodbc, unittest
-from .. import mssqlUtility
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'mssqlUtility'))
+import mssqlUtility
 
 class mssqlUtilityTest(unittest.TestCase):
 
