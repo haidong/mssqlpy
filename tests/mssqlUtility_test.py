@@ -1,4 +1,4 @@
-import pyodbc, unittest
+import pyodbc, unittest, sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'mssqlUtility'))
 import mssqlUtility
 
